@@ -70,7 +70,7 @@ header .col-sm-2 .menu{
 }
 .menu .dropdown-menu {
   position: absolute;
-  top: 40px;
+  top: 25px;
   right: auto;
   left: auto;
   width: 290px;

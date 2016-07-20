@@ -1,8 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
+from django.contrib import auth
 
 
 def home(request):
-	return render(request, 'index.html')
+	menu = 'disabled'
+	return render(request, 'index.html', {"menu0": menu})
 
-def login(request):
-	return render(request, 'login.html')
+def logout(request):
+	auth.logout(request)
+	return HttpResponseRedirect('/login')
+
+

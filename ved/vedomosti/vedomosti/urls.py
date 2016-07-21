@@ -20,7 +20,7 @@ from Users.views import *
 
 
 urlpatterns = [
-    # url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^$', home),
     url(r'^user/logout/$', logout),
     url(r'^login/$', form),
